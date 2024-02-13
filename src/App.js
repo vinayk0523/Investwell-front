@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignIndex from './uiCollections/signUp/index';
 import Index from './uiCollections/login/index';
 import AfterLogin from './uiCollections/afterLogin'
+import Policydocs from './uiCollections/policyDocs';
 
 function App() {
   return (
@@ -10,13 +11,13 @@ function App() {
         <Route path='/' element={<Index/>}></Route>
         <Route path='/signup' element={<SignIndex/>}></Route>
         <Route path='/afterlogin' element={<AfterLogin/>}></Route>
+        <Route path='/policy' element={<Policydocs/>}></Route>
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-
 
 
 
